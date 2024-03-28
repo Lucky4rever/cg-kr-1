@@ -10,7 +10,7 @@ function App() {
 
   renderer.setScene('static', () => {
     renderer.tools.setViewport();
-    renderer.tools.clearCanvas({ red: 255, green: 255, blue: 255, alpha: 100 });
+    renderer.tools.clearCanvas({ red: 205, green: 255, blue: 255, alpha: 100 });
 
     // shaders
     renderer.tools.createAndCompileShader(getShader("vertex"), "vertex");
@@ -44,7 +44,7 @@ function App() {
       if (isSegmentHidden(i)) {
         ovalColors.push(1.0, 1.0, 1.0, 1.0);
       } else {
-        ovalColors.push(0.0, 0.0, 0.0, 0.0);
+        ovalColors.push(Math.random(), Math.random(), Math.random(), 0.0);
       }
     }
 
