@@ -1,0 +1,21 @@
+{
+  "name": "cg-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel serve --port 3000 ./public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-glsl": "2.10.2",
+    "@types/node": "^20.8.10",
+    "parcel": "^2.10.2",
+    "parcel-bundler": "^1.12.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
